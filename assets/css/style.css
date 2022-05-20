@@ -58,6 +58,10 @@
   --img-scale: scale(1.1);
 }
 
+.bx-moon {
+  color: var(--white-color);
+}
+
 @media screen and (min-width: 968px) {
   :root {
     --biggest-font-size: 4rem;
@@ -888,6 +892,9 @@ input {
     background-color: var(--title-color);
   }
   .scroll-header .change-theme {
+    color: var(--text-color);
+  }
+  .scroll-header .bx-moon {
     color: var(--text-color);
   }
   .section {

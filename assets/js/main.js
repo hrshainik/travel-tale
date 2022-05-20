@@ -67,15 +67,15 @@ function playPause(){
         // Play video
         videoFile.play()
         // We change the icon
-        videoIcon.classList.add('bx bx-pause')
-        videoIcon.classList.remove('bx bx-play')
+        videoIcon.classList.add('bx-pause')
+        videoIcon.classList.remove('bx-play')
     }
     else {
       // Pause video
       videoFile.pause(); 
       // We change the icon
-      videoIcon.classList.remove('ri-pause-line')
-      videoIcon.classList.add('ri-play-line')
+      videoIcon.classList.remove('bx-pause')
+      videoIcon.classList.add('bx-play')
 
   }
 }
@@ -99,6 +99,7 @@ window.addEventListener('scroll', scrollUp)
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
+console.log(sections);
 
 function scrollActive(){
     const scrollY = window.pageYOffset
@@ -106,7 +107,8 @@ function scrollActive(){
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
+        const sectionId = current.getAttribute('id')
+        console.log(sectionId);
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
@@ -120,7 +122,7 @@ window.addEventListener('scroll', scrollActive)
 /*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
-const iconTheme = 'ri-sun-line'
+const iconTheme = 'bx-sun'
 
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
@@ -128,7 +130,7 @@ const selectedIcon = localStorage.getItem('selected-icon')
 
 // We obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
