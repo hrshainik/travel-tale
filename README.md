@@ -77,6 +77,6 @@ Project Link: [https://github.com/hrshainik/travel-tale](https://github.com/hrsh
 
 <p align="right"><a href="#top">⇧Back To Top</a></p>
 
-[product-screenshot]: assets/img/travel-tale.netlify.app.png
+[product-screenshot]: assets/img/travel-tale.netlify.app.jpg
 
 
