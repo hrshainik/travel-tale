@@ -251,6 +251,10 @@ input {
     padding: 3rem;
     transition: .4s;
   }
+  
+  .bx-sun {
+    color: var(--first-color);
+  }
 }
 
 .nav__list {
