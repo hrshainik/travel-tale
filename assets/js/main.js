@@ -152,7 +152,7 @@ themeButton.addEventListener('click', () => {
 const sr = ScrollReveal({
   distance: '60px',
   duration: 2800,
-  reset: true,
+  reset: false,
 })
 
 
@@ -178,25 +178,3 @@ sr.reveal(`.about__img-overlay,
   origin: 'right',
   interval: 100,
 })
-    
-
-
-
-
-// Previously selected topic (if user selected)
-
-
-
-// We obtain the current theme that the interface has by validating the dark-theme class
-
-
-// We validate if the user previously chose a topic
-
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  
-
-// Activate / deactivate the theme manually with the button
-
-    // Add or remove the dark / icon theme
-    
-    // We save the theme and the current icon that the user chose
